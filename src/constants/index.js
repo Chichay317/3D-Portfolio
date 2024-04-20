@@ -27,6 +27,7 @@ import {
   shecodes,
   weather,
   peachblossoms,
+  refine,
 } from "../assets";
 
 export const navLinks = [
@@ -350,6 +351,27 @@ const projects = [
     ],
     image: edumart,
     source_code_link: "https://github.com/Chichay317/edumart",
+  },
+  {
+    name: "React Dashboard",
+    description:
+      "Our dashboard boasts a dynamic Kanban board for intuitive task management, complemented by real-time data charts that offer live insights for decision-making, with GraphQL's data querying.",
+    tags: [
+      {
+        name: "antDesign",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "graphql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "refine",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: refine,
+    source_code_link: "https://github.com/Chichay317/refine-dashboard",
   },
 ];
 

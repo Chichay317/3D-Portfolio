@@ -32,6 +32,7 @@ import carrent from "./carrent.png";
 import weather from "./weather.png";
 import dictionary from "./dictionary.png";
 import snapgram from "./snapgram.png";
+import refine from "./refine.png";
 import edumart from "./edumart.png";
 import carshowcase from "./car-showcase.png";
 import amazonclone from "./amazon-clone.png";
@@ -87,4 +88,5 @@ export {
   dictionary,
   edumart,
   snapgram,
+  refine,
 };
