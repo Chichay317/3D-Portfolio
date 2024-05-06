@@ -28,6 +28,7 @@ import {
   weather,
   peachblossoms,
   refine,
+  iphonepro,
 } from "../assets";
 
 export const navLinks = [
@@ -372,6 +373,27 @@ const projects = [
     ],
     image: refine,
     source_code_link: "https://github.com/Chichay317/refine-dashboard",
+  },
+  {
+    name: "iPhone 15 Pro",
+    description:
+      "This is a clone of the iPhone fifteen pro website which I built with React, Vite, Three.js, GSAP and Tailwind. It contains different models and exciting animations as seen in the real website.",
+    tags: [
+      {
+        name: "threejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: iphonepro,
+    source_code_link: "https://github.com/Chichay317/iPhone-fifteen-clone",
   },
 ];
 

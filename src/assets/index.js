@@ -34,6 +34,7 @@ import dictionary from "./dictionary.png";
 import snapgram from "./snapgram.png";
 import refine from "./refine.png";
 import edumart from "./edumart.png";
+import iphonepro from "./iphonepro.png";
 import carshowcase from "./car-showcase.png";
 import amazonclone from "./amazon-clone.png";
 import jobit from "./jobit.png";
@@ -89,4 +90,5 @@ export {
   edumart,
   snapgram,
   refine,
+  iphonepro,
 };
