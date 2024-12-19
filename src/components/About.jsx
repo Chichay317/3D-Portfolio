@@ -48,8 +48,8 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I am a skilled frontend developer with extensive expertise, specializing
-        in HTML, CSS, and JavaScript. My proficiency extends to advanced
-        frameworks such as React.js and Next.js, as well as TypeScript and
+        in HTML, CSS, JavaScript and Python. My proficiency extends to advanced
+        frameworks such as React.js, Django, Next.js, as well as TypeScript and
         Three.js. My proactive approach to problem-solving and commitment to
         continuous learning have consistently contributed to the success of my
         projects. I am enthusiastic about the opportunity to bring my

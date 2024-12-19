@@ -14,12 +14,13 @@ import {
   bootstrap,
   git,
   password,
-  carshowcase,
+  california,
   github,
   sidehustle,
   caesar,
   firewall,
-  amazonclone,
+  chatbot,
+  movie,
   dictionary,
   snapgram,
   threejs,
@@ -194,25 +195,25 @@ const projects = [
     source_code_link: "https://github.com/Chichay317/Caesar_Cipher_GUI",
   },
   {
-    name: "Weather Application",
+    name: "Study Chatbot",
     description:
-      "Web application that empowers users to effortlessly check current weather conditions, including humidity, wind speed, and a six-day forecast, for any desired location.",
+      "A Chatbot offering basic programming Q&A with dynamic explanations powered by Google Generative AI, featuring user authentication and chat history.",
     tags: [
       {
-        name: "html",
+        name: "AI",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "django",
         color: "green-text-gradient",
       },
       {
-        name: "js",
+        name: "python",
         color: "pink-text-gradient",
       },
     ],
-    image: weather,
-    source_code_link: "https://github.com/Chichay317/Weather-app",
+    image: chatbot,
+    source_code_link: "https://github.com/Chichay317/Study_Chatbot",
   },
   {
     name: "Firewall Server",
@@ -278,25 +279,25 @@ const projects = [
     source_code_link: "https://github.com/Chichay317/Port_Scanner",
   },
   {
-    name: "Amazon Clone",
+    name: "Weather Application",
     description:
-      "Web application offering users the ability to purchase products. Features include user accounts, shopping cart functionality, and simulated checkout processes.",
+      "Web application that empowers users to effortlessly check current weather conditions, including humidity, wind speed, and a six-day forecast, for any desired location.",
     tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "redux",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "stripe",
+        name: "js",
         color: "pink-text-gradient",
       },
     ],
-    image: amazonclone,
-    source_code_link: "https://github.com/Chichay317/amazon_clone",
+    image: weather,
+    source_code_link: "https://github.com/Chichay317/Weather-app",
   },
   {
     name: "Dictionary App",
@@ -341,25 +342,25 @@ const projects = [
     source_code_link: "https://github.com/Chichay317/snapgram",
   },
   {
-    name: "EduMart",
+    name: "Price Predictor",
     description:
-      "Ecommerce platform facilitating the sale of used materials with Clerk.js authentication and Firebase database integration. Users can list products, search, and filter by price across categorized pages.",
+      "A machine learning project predicting California house prices using regression techniques, with data exploration, outlier removal, feature engineering, and model building.",
     tags: [
       {
-        name: "firebase",
+        name: "ML",
         color: "blue-text-gradient",
       },
       {
-        name: "clerkjs",
+        name: "pandas",
         color: "green-text-gradient",
       },
       {
-        name: "redux",
+        name: "python",
         color: "pink-text-gradient",
       },
     ],
-    image: edumart,
-    source_code_link: "https://github.com/Chichay317/edumart",
+    image: california,
+    source_code_link: "https://github.com/Chichay317/California_House_Prices_Analysis",
   },
   {
     name: "React Dashboard",
@@ -383,25 +384,25 @@ const projects = [
     source_code_link: "https://github.com/Chichay317/refine-dashboard",
   },
   {
-    name: "iPhone 15 Pro",
+    name: "Movie Recommendation",
     description:
-      "A clone of the iPhone fifteen pro website built with React, Vite, Three.js, GSAP and Tailwind. It contains different models and exciting animations as seen in the real website.",
+      "A movie recommendation system leveraging NLP and ML to analyze metadata with CountVectorizer and cosine similarity, suggesting similar movies based on user input.",
     tags: [
       {
-        name: "threejs",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "gsap",
+        name: "ML",
         color: "green-text-gradient",
       },
       {
-        name: "vite",
+        name: "NLP",
         color: "pink-text-gradient",
       },
     ],
-    image: iphonepro,
-    source_code_link: "https://github.com/Chichay317/iPhone-fifteen-clone",
+    image: movie,
+    source_code_link: "https://github.com/Chichay317/Movie_Recommendation_System",
   },
   {
     name: "Duolingo Clone",

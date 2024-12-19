@@ -36,6 +36,9 @@ import snapgram from "./snapgram.png";
 import refine from "./refine.png";
 import edumart from "./edumart.png";
 import iphonepro from "./iphonepro.png";
+import chatbot from './chatbot.png';
+import california from './california.png';
+import movie from './movie.png';
 import duolingo from "./duolingo.png";
 import carshowcase from "./car-showcase.png";
 import amazonclone from "./amazon-clone.png";
@@ -105,4 +108,7 @@ export {
   duolingo,
   fate,
   python,
+  chatbot,
+  california,
+  movie
 };
