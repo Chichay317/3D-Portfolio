@@ -1,73 +1,28 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+
+const EMAIL = "chi.divinembah@gmail.com";
+const LINKEDIN_URL = "https://www.linkedin.com/in/divine-angel-mbah?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app";
+const TWITTER_URL = "https://x.com/code_deev?s=21";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Divine Mbah",
-          from_email: form.email,
-          to_email: "chic11951@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      alert("Email copied to clipboard");
+    } catch {
+      alert("Unable to copy email");
+    }
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -75,52 +30,58 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your email address?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
-            <textarea
-              rows={7}
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
+        <div className="mt-12 flex flex-col gap-8">
+          <p className="text-secondary text-[17px] max-w-md leading-relaxed">
+            I’m open to opportunities, collaborations, and meaningful
+            conversations. Feel free to reach out directly.
+          </p>
 
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+          <div className="bg-tertiary p-6 rounded-xl">
+            <div className="flex items-center gap-3">
+              <span className="text-white text-lg font-medium flex gap-2">
+                <FaEnvelope className="w-6 h-6" /> {EMAIL}
+              </span>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-4">
+              <a
+                href={`mailto:${EMAIL}?subject=Portfolio%20Inquiry`}
+                className="bg-primary py-2 px-6 rounded-lg text-white font-bold hover:opacity-90 transition"
+              >
+                Send email
+              </a>
+
+              <button
+                onClick={copyEmail}
+                className="border border-secondary py-2 px-6 rounded-lg text-white hover:border-white transition"
+              >
+                Copy email
+              </button>
+            </div>
+          </div>
+
+          <div className="h-px bg-secondary/30" />
+
+          <div className="flex gap-8">
+           <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#9aa5ff] transition flex items-center gap-2"
           >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+            <FaLinkedin className="w-6 h-6" /> LinkedIn
+          </a>
+
+            <a
+              href={TWITTER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#9aa5ff] transition flex items-center gap-2"
+            >
+              <FaTwitter className="w-6 h-6" /> Twitter
+            </a>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div

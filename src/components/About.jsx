@@ -47,14 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a skilled frontend developer with extensive expertise, specializing
-        in HTML, CSS, JavaScript and Python. My proficiency extends to advanced
-        frameworks such as React.js, Django, Next.js, as well as TypeScript and
-        Three.js. My proactive approach to problem-solving and commitment to
-        continuous learning have consistently contributed to the success of my
-        projects. I am enthusiastic about the opportunity to bring my
-        comprehensive skill set and passion for frontend development to your
-        team, driving innovation and achieving outstanding results.
+       Ideas often begin as scattered pieces of thought, but I’ve always been fascinated about how they can be shaped into systems that make sense. Software development became my way of exploring that process by translating complexity into clarity through logic, creativity, and data. I see every project as a space to understand how information moves, how patterns form, and how technology can turn those patterns into meaningful solutions that help societies work smarter. My goal is to keep driving advancements that transform how people learn, communicate, and solve problems.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

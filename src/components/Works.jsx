@@ -82,12 +82,7 @@ const Works = () => {
           // variants={fadeIn("", "", 0.1, 1)} //direction, type, delay, duration
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Discover a curated collection of my latest projects, showcasing my
-          expertise in frontend development. Each project highlights my
-          commitment to creating exceptional user experiences using cutting-edge
-          technologies and best practices. From responsive websites to dynamic
-          web applications, these projects reflect my passion for innovation and
-          quality craftsmanship.
+         What began as small experiments and late-night builds gradually evolved into projects that shaped the way I create and think. Each one taught me something about balancing creativity with structure and about turning concepts into systems that work. Together, they trace a journey of exploration, growth, and a constant drive to keep learning and improving. Here are some of the milestones that reflect that progress.
         </motion.p>
       </div>
 

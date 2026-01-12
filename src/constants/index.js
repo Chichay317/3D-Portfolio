@@ -1,38 +1,36 @@
 import {
-  edumart,
+  niit,
   backend,
   creator,
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
-  redux,
-  tailwind,
   next,
-  bootstrap,
-  git,
-  password,
-  california,
-  github,
   sidehustle,
-  caesar,
-  firewall,
+  faceRecognition,
   chatbot,
-  movie,
   dictionary,
-  snapgram,
   threejs,
   nira,
-  shecodes,
   weather,
-  port,
   refine,
-  iphonepro,
+  matplotlib,
   duolingo,
   fate,
   python,
+  pandas,
+  java,
+  scikit,
+  numPy,
+  tensorflow,
+  django,
+  objectDetect,
+  retailEtl,
+  fakeNews,
+  timeSeries,
+  kafka,
+  nyc,
 } from "../assets";
 
 export const navLinks = [
@@ -52,31 +50,31 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Developer",
+    title: "Creative",
     icon: web,
   },
   {
-    title: "Product Manager",
+    title: "Analytical",
     icon: creator,
   },
   {
-    title: "Problem Solver",
+    title: "Collaborative",
     icon: creator,
   },
   {
-    title: "Team Lead",
+    title: "Driven",
     icon: backend,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Matplotlib",
+    icon: matplotlib,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Pandas",
+    icon: pandas,   
   },
   {
     name: "JavaScript",
@@ -87,76 +85,78 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "React.js",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Scikit-Learn",
+    icon: scikit,
   },
   {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
+    name: "NumPy",
+    icon: numPy,
   },
   {
-    name: "python",
+    name: "Python",
     icon: python,
   },
   {
-    name: "github",
-    icon: github,
+    name: "Django",
+    icon: django,
   },
   {
-    name: "bootstrap",
-    icon: bootstrap,
+    name: "TensorFlow",
+    icon: tensorflow,
   },
   {
-    name: "next",
+    name: "Next.js",
     icon: next,
   },
 ];
 
 const experiences = [
   {
+    title: "Programming Instructor",
+    company_name: "NIIT",
+    icon: niit,
+    iconBg: "#383E56",
+    date: "Feb 2025 - Current",
+    points: [
+      "I mentor over 80 students in Python and Java, helping them build confidence through structured lessons and live coding sessions that have improved their proficiency and course completion outcomes.",
+      "Through hackathons and peer-learning sessions, I build environments that encourage teamwork, creative problem-solving and continuous learning.",
+      "I supervise undergraduate trainees through their industrial training and guide them as they work on real projects in a professional setting.",
+    ],
+  },
+  {
     title: "Frontend Developer",
     company_name: "Fate Foundation",
     icon: fate,
     iconBg: "#E6DEDD",
-    date: "Sep 2022 - Oct 2024",
+    date: "Nov 2022 - Oct 2024",
     points: [
-      "Contributed to the development of SOAR, a CRM-style platform designed to enhance student recruitment, progress tracking, grant management, volunteer database upkeep, and task assignment.",
-      "Managed collaboration and version control with Git and GitHub.",
-      "Conducted live demonstrations for clients to showcase project features.",
+      "I worked with a team to build SOAR, a customer relationship management platform that supports students, administrators, volunteers and vendors. The system makes it possible to track activities, progress and grant distribution in real time.",
+      "I built dashboards that helped the management see how programs were performing and made reports easier to understand. I also worked on making the platform faster and more stable during busy grant periods.",
+      "Over time, I added event and job-application features so entrepreneurs and volunteers could register for programs, join online sessions and find opportunities through the Foundation’s network.",
     ],
   },
   {
     title: "IT Support Personnel",
     company_name: "NIRA",
     icon: nira,
-    iconBg: "#E6DEDD",
-    date: "Feb 2023 - May 2023",
-    points: [
-      "Improved customer relationship by ensuring quick response to emails.",
-      "Provided technical support to staff of the organization when needed.",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    company_name: "SheCodes Foundation",
-    icon: shecodes,
     iconBg: "#383E56",
-    date: "July 2021 - Oct 2022",
+    date: "Feb 2023 - July 2023",
     points: [
-      "Built a weather application showing your current location’s weather, humidity, wind and forecast for the next six days.",
-      "Developed team communications.",
+      "I was part of the technical team that maintained the .ng domain registry, supporting thousands of domains across Nigeria’s digital network.",
+      "I handled system backups, restored test environments, and applied security checks to reduce the risk of data loss and downtime.",
+      "During my time there, I also contributed to outreach efforts that helped more people understand how the .ng domain works and why it matters for Nigeria’s online identity.",
     ],
   },
   {
@@ -164,35 +164,35 @@ const experiences = [
     company_name: "SideHustle",
     icon: sidehustle,
     iconBg: "#E6DEDD",
-    date: "May 2020 - May 2021",
+    date: "Mar 2022 - May 2022",
     points: [
-      "Participated in a team project (A Food Application) and worked together with various designers and product managers.",
-      "Led the Frontend Development Team from the start to completion of the project phase.",
+      "I led the frontend team for Dietri, a web application that recommends balanced meal options and helps users learn about nutritional value.",
+      "I grew stronger at working within a team environment by contributing to code reviews, refining features together, and staying aligned during each sprint.",
     ],
   },
 ];
 
 const projects = [
   {
-    name: "Caesar Cipher",
+    name: "Face Recognition System",
     description:
-      "A graphical application for encrypting and decrypting text using the Caesar Cipher technique, featuring a user-friendly interface built with Tkinter.",
+      "Face recognition system that verifies whether two uploaded images belong to the same individual by detecting facial regions and comparing face embeddings.",
     tags: [
       {
-        name: "python",
+        name: "computer-vision",
         color: "blue-text-gradient",
       },
       {
-        name: "tkinter",
+        name: "deep-learning",
         color: "green-text-gradient",
       },
       {
-        name: "encryption",
+        name: "python",
         color: "pink-text-gradient",
       },
     ],
-    image: caesar,
-    source_code_link: "https://github.com/Chichay317/Caesar_Cipher_GUI",
+    image: faceRecognition,
+    source_code_link: "https://github.com/Chichay317/Face-Recognition-System",
   },
   {
     name: "Study Chatbot",
@@ -216,12 +216,12 @@ const projects = [
     source_code_link: "https://github.com/Chichay317/Study_Chatbot",
   },
   {
-    name: "Firewall Server",
+    name: "Object Detection System",
     description:
-      "A simple firewall server built with Python that filters incoming connections based on IP and port rules, and implements rate limiting to prevent abuse.",
+      "A real-time object detection system that identifies and labels multiple objects in images and video using a pre-trained deep learning model.",
     tags: [
       {
-        name: "firewall",
+        name: "computer-vision",
         color: "blue-text-gradient",
       },
       {
@@ -229,54 +229,54 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "socketprogramming",
+        name: "deep-learning",
         color: "pink-text-gradient",
       },
     ],
-    image: firewall,
-    source_code_link: "https://github.com/Chichay317/Firewall_Tool",
+    image: objectDetect,
+    source_code_link: "https://github.com/Chichay317/Object-Detection-System",
   },
   {
-    name: "Password Manager",
+    name: "Retail Sales Data Pipeline",
     description:
-      "A password manager built with Python's Tkinter library, allowing users to generate strong passwords, save them securely in a file, and retrieve stored passwords.",
+      "End-to-end data pipeline that processes retail sales data into a dimensional warehouse and delivers analytical insights through an interactive dashboard.",
     tags: [
       {
-        name: "cybersecurity",
+        name: "data-engineering",
         color: "blue-text-gradient",
       },
       {
-        name: "safepassword",
+        name: "ETL",
         color: "green-text-gradient",
       },
       {
-        name: "python",
+        name: "PostgreSQL",
         color: "pink-text-gradient",
       },
     ],
-    image: password,
-    source_code_link: "https://github.com/Chichay317/Password-Manager",
+    image: retailEtl,
+    source_code_link: "https://github.com/Chichay317/retail-sales-data-engineering-pipeline",
   },
   {
-    name: "Port Scanner",
+    name: "Fake News Detection",
     description:
-      "A Python multithreaded port scanner that scans a target host for open ports and retrieves service banners to identify the services running for security assessment.",
+      "A machine learning system that identifies news articles as fake or real using NLP preprocessing, TF-IDF features, and multiple classifiers.",
     tags: [
       {
-        name: "queue",
+        name: "NLP",
         color: "blue-text-gradient",
       },
       {
-        name: "threading",
+        name: "ML",
         color: "green-text-gradient",
       },
       {
-        name: "python",
+        name: "text-classification",
         color: "pink-text-gradient",
       },
     ],
-    image: port,
-    source_code_link: "https://github.com/Chichay317/Port_Scanner",
+    image: fakeNews,
+    source_code_link: "https://github.com/Chichay317/Fake-News-Detection-System",
   },
   {
     name: "Weather Application",
@@ -321,46 +321,46 @@ const projects = [
     source_code_link: "https://github.com/Chichay317/Dictionary-Application",
   },
   {
-    name: "SnapGram",
+    name: "Time Series Forecasting",
     description:
-      "Social media-inspired web application powered by Appwrite backend, facilitating post creation, updates, likes, and bookmarks. Users can authenticate securely and explore a dynamic feed of posts.",
+      "A time series forecasting project that predicts gold prices from historical monthly data using exploratory analysis and multiple forecasting models for performance evaluation.",
     tags: [
       {
-        name: "react",
+        name: "forecasting",
         color: "blue-text-gradient",
       },
       {
-        name: "appwrite",
+        name: "data-analysis",
         color: "green-text-gradient",
       },
       {
-        name: "reactquery",
+        name: "time-series",
         color: "pink-text-gradient",
       },
     ],
-    image: snapgram,
-    source_code_link: "https://github.com/Chichay317/snapgram",
+    image: timeSeries,
+    source_code_link: "https://github.com/Chichay317/Time-Series-Forecasting",
   },
   {
-    name: "Price Predictor",
+    name: "Kafka Streaming Pipeline",
     description:
-      "A machine learning project predicting California house prices using regression techniques, with data exploration, outlier removal, feature engineering, and model building.",
+      "This project processes sensor events in real time using Kafka, stores aggregated metrics in PostgreSQL, and presents live insights through an interactive analytics dashboard interface.",
     tags: [
       {
-        name: "ML",
+        name: "data-engineering",
         color: "blue-text-gradient",
       },
       {
-        name: "pandas",
+        name: "kafka",
         color: "green-text-gradient",
       },
       {
-        name: "python",
+        name: "streaming",
         color: "pink-text-gradient",
       },
     ],
-    image: california,
-    source_code_link: "https://github.com/Chichay317/California_House_Prices_Analysis",
+    image: kafka,
+    source_code_link: "https://github.com/Chichay317/kafka-streaming-pipeline",
   },
   {
     name: "React Dashboard",
@@ -384,25 +384,25 @@ const projects = [
     source_code_link: "https://github.com/Chichay317/refine-dashboard",
   },
   {
-    name: "Movie Recommendation",
+    name: "NYC Taxi Data Lake",
     description:
-      "A movie recommendation system leveraging NLP and ML to analyze metadata with CountVectorizer and cosine similarity, suggesting similar movies based on user input.",
+      "A batch data lake pipeline that processes large-scale NYC taxi trip data with PySpark and generates aggregated metrics and visual summaries over hourly and daily periods.",
     tags: [
       {
-        name: "python",
+        name: "big-data",
         color: "blue-text-gradient",
       },
       {
-        name: "ML",
+        name: "pyspark",
         color: "green-text-gradient",
       },
       {
-        name: "NLP",
+        name: "data-engineering",
         color: "pink-text-gradient",
       },
     ],
-    image: movie,
-    source_code_link: "https://github.com/Chichay317/Movie_Recommendation_System",
+    image: nyc,
+    source_code_link: "https://github.com/Chichay317/nyc-taxi-data-lake",
   },
   {
     name: "Duolingo Clone",
